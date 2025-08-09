@@ -1,0 +1,164 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* -------------------- */
+/* Vertical Text Carousel */
+/* -------------------- */
+.roles-container {
+  display: inline-block;
+  overflow: hidden;
+  height: 54;
+  vertical-align: bottom;
+}
+
+.roles-inner {
+  display: block;
+  animation: slide 12s infinite;
+}
+
+.role {
+  display: block;
+  height: 54px; /* match container */
+  line-height: 54px;/* match container height */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-54px);
+  }
+  45% {
+    transform: translateY(-54px);
+  }
+  50% {
+    transform: translateY(-108px);
+  }
+  70% {
+    transform: translateY(-108px);
+  }
+  75% {
+    transform: translateY(-162px);
+  }
+  95% {
+    transform: translateY(-162px);
+  }
+  100% {
+    transform: translateY(-216);
+  }
+}
+
+/* -------------------- */
+/* Blobby Gradient Styles */
+/* -------------------- */
+.blob {
+  position: fixed;
+  width: 60vw; /* bigger so they reach edges */
+  height: 60vw;
+  border-radius: 50%;
+  filter: blur(80px);
+  mix-blend-mode: screen;
+  animation: move 30s ease-in-out infinite;
+  z-index: -1;
+}
+
+/* Different starting positions */
+.blob1 {
+  background: radial-gradient(circle, rgba(255, 0, 150, 0.6) 0%, transparent 70%);
+  top: -10%;
+  left: -10%;
+}
+
+.blob2 {
+  background: radial-gradient(circle, rgba(0, 200, 255, 0.6) 0%, transparent 70%);
+  top: 20%;
+  left: 60%;
+  animation-delay: -10s;
+}
+
+.blob3 {
+  background: radial-gradient(circle, rgba(0, 255, 150, 0.6) 0%, transparent 70%);
+  top: 60%;
+  left: -20%;
+  animation-delay: -5s;
+}
+
+.blob4 {
+  background: radial-gradient(circle, rgba(255, 200, 0, 0.6) 0%, transparent 70%);
+  top: -15%;
+  left: 50%;
+  animation-delay: -15s;
+}
+
+.blob5 {
+  background: radial-gradient(circle, rgba(200, 0, 255, 0.6) 0%, transparent 70%);
+  top: 70%;
+  left: 70%;
+  animation-delay: -7s;
+}
+
+.blob6 {
+  background: radial-gradient(circle, rgba(255, 100, 0, 0.6) 0%, transparent 70%);
+  top: 40%;
+  left: 30%;
+  animation-delay: -3s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(20vw, -15vh) scale(1.2);
+  }
+  50% {
+    transform: translate(-25vw, 20vh) scale(0.9);
+  }
+  75% {
+    transform: translate(15vw, -20vh) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
