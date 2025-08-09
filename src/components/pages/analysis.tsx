@@ -126,7 +126,7 @@ export default function DashboardLayout() {
           </div>
           <div
             id="how-it-works"
-            className="w-full aspect-video rounded-md overflow-hidden my-6 grid grid-cols-2 gap-6 p-2"
+            className="w-full aspect-video rounded-md overflow-hidden my-6 grid grid-cols-2 gap-6"
           >
             <div className="bg-blue-400 rounded-md row-span-2"></div>
             <div className="bg-green-400 rounded-md"></div>
